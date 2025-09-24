@@ -4,32 +4,36 @@
 	 <meta charset="UTF-8">
     <title>My Programming Error Tracker</title>
 </head>
-<h1> My Programming Error Tracker</h1>
+<h1 style="text-align:center;"> My Programming Error Tracker</h1>
 
-<h2>Introduction</h2>
-<p>This web page helps me record, organize, and learn from the errors I encounter while programming in Java. By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid repeating the same mistakes.</p>
+<h2 style="text-align:center;">Introduction</h2>
+<p style="text-align:center;">This web page helps me record, organize, and learn from the errors I encounter while programming in Java.<br>
+By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid repeating the same mistakes.</p>
 
-<h2>Common Java Errors</h2>
+<h2 style="text-align:center;">Common Java Errors</h2>
 
-<h3>NullPointerException</h3>
-<strong>Cause:</strong>Trying to use an object that was never initialized.<br>
-<strong>Solution:</strong> Initialize the object before using it.<br>
-<strong>Note:</strong> Always check for null references before accessing object properties or methods.<br>
-<strong>Before Fix:</strong>
-<pre>
-    public class Main {
+<h3 style="text-align:center;">NullPointerException</h3>
+<p style="text-align:center;"> Cause: Trying to use an object that was never initialized</p>
+<p style="text-align:center;"> Solution: Initialize the object before using it.</p>
+<p style="text-align:center;"> Note: Always check for null references before accessing object properties or methods.</p>
+<p style="text-align:center;"><strong>Before Fix:</strong></p>
+<pre style="text-align:center;" >
+public class Main {
     public static void main(String[] args) {
         String text = null;           
         System.out.println(text.length());
     }
 }</pre>
-<strong>After Fix:</strong>
-<pre> public class Main {
+<p style="text-align:center;"><strong>After Fix:</strong></p>
+<pre style="text-align:center;"> 
+public class Main {
     public static void main(String[] args) {
         String text = "Hello";        
         System.out.println(text.length());
     }
 }</pre>
+
+
 <body>
 </body>
 </html>
