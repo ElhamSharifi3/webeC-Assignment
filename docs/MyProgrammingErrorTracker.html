@@ -1,45 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	 <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>My Programming Error Tracker</title>
-    <style >
+    <style>
         * {
             margin: 0;
             text-align: center;
         }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        header {
+            background-color: #9c7fa8;
+            color: #fff3fd;
+            text-align: left;
+            padding: 1rem 0;
+            font-family: Georgia, serif;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex-box;
+            background-color: #fff3fd;
+            font-family: Georgia, serif;
+            margin: 0;
+
+        }
+
+        footer {
+            background-color: #3a374f;
+            font-size: larger;
+            font-family: papyrus, Fantasy;
+            margin: 0;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        h1, h2 {
+        }
+
+        h3 {}
+
+        p {}
+
+        pre {}
     </style>
 </head>
-<h1> My Programming Error Tracker</h1>
 
-<h2>Introduction</h2>
-<p>This web page helps me record, organize, and learn from the errors I encounter while programming in Java.<br>
-By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid repeating the same mistakes.</p>
+<body>
+    <header>
+        <dfn title="Code Kitchen Uebung"></dfn> My Programming Error Tracker
+    </header>
+    <h2>Introduction</h2>
+    <p>This web page helps me record, organize, and learn from the errors I encounter while programming in Java.<br>
+        By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid
+        repeating the same mistakes.</p>
 
-<h2>Common Java Errors</h2>
+    <h2>Common Java Errors</h2>
 
-<h3>NullPointerException</h3>
-<p> Cause: Trying to use an object that was never initialized</p>
-<p> Solution: Initialize the object before using it.</p>
-<p> Note: Always check for null references before accessing object properties or methods.</p>
-<p><strong>Before Fix:</strong></p>
-<pre>
+    <h3>NullPointerException</h3>
+    <p> Cause: Trying to use an object that was never initialized</p>
+    <p> Solution: Initialize the object before using it.</p>
+    <p> Note: Always check for null references before accessing object properties or methods.</p>
+    <p><strong>Before Fix:</strong></p>
+    <pre>
 public class Main {
     public static void main(String[] args) {
         String text = null;           
         System.out.println(text.length());
     }
 }</pre>
-<p style="text-align:center;"><strong>After Fix:</strong></p>
-<pre style="text-align:center;"> 
+    <p style="text-align:center;"><strong>After Fix:</strong></p>
+    <pre style="text-align:center;">
 public class Main {
     public static void main(String[] args) {
         String text = "Hello";        
         System.out.println(text.length());
     }
-}</pre>
-
-
-<body>
+}
+</pre>
+    <footer>
+        <address style="color: #fff3fd;">
+             @ Elham Sharifi,
+            <a style="color: #fff3fd;" href="mailto:elham.sharifi@students.fhnw.ch">elham.sharifi@students.fhnw.ch</a>
+        </address>
+    </footer>
 </body>
+
 </html>
