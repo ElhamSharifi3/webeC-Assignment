@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="book icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/257/257633.png">
+    <title>Storybook for the Web Engineering Module</title>
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTVwM2ZxcTR0bmd1Nnk1cWZwcHFid2luZ2d3cjRyNXA4YjBueGZrbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kZqbBT64ECtjy/giphy.gif"
+        id="HelloKitty" alt="Hello Kitty" width="250">
+    <style>
+        html,
+        body {
+            height: 100;
+            font-family: Arial, sans-serif;
+            background-color: #ffd9e7;
+            margin: 0;
+            display: block;
+        }
+
+        h1,
+        h2 {
+            color: #CF3F6D;
+        }
+        h1{
+            font-size: 30px;
+        }
+
+        header {
+            width: 100%;
+            text-align: left;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            padding-top: 10%;
+        }
+
+        .container {
+            max-width: 800px;
+            /* or any width you like */
+            width: 100%;
+        }
+
+        #HelloKitty {
+            float: right;
+        }
+
+
+        table {
+            border-collapse: separate;
+
+            border-spacing: 0;
+
+            width: 100%;
+            border: 4px solid #CF3F6D;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+        }
+
+        th,
+        td {
+            border: none;
+            padding: 8px;
+            text-align: left;
+        
+        }
+
+        th {
+            background-color: #FF8EAF;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        #date{
+            border-top-left-radius: 8px;
+        }
+          #topic{
+            border-top-right-radius: 8px;
+        }
+
+        .topnav {
+            background-color: #FF8EAF;
+            overflow: hidden;
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a.active {
+            background-color: #CF3F6D;
+            color: white;
+        }
+
+        .totaleffort {
+            background-color: #ffcce0;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+            border: 1px solid #ff99bb;
+        }
+
+        #criteria {
+            background-color: #ffcce0;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+            border: 1px solid #ff99bb;
+        }
+
+        address {
+
+            background-color: #ffcce0;
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+            border: 1px solid #ff99bb;
+        }
+        #caption{
+            font-size: large;
+            padding-top: 5%;
+           text-align: center;
+        }
+        code{
+            background-color: #ffe4ef;
+            border-radius: 12px;
+            padding: 5px;
+            margin: 10px 0;
+            border: 2px solid #ff99bb;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topnav"> <a class="active" href="#home">Storybook for the Web Engineering Module</a> </div>
+    </header>
+    <div class="container">
+        <main>
+            <section id="context">
+                <h1>Module delivery mode</h1>
+                <p> This installment of the <dfn title="WebEngineering">webeC</dfn> module is delivered in the fall
+                    semester
+                    of 2025. </p>
+            </section>
+            <section id="content">
+                <h1>Delivery dates and examination details</h1>
+                <article>
+                    <h2>Overview</h2>
+                    <table>
+                        <h2 id="caption">Delivery dates</h2>
+                        <thead>
+                            <tr>
+                                <th id="date">Date</th>
+                                <th>#</th>
+                                <th id="topic">Topic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mi, 17.09.25 (08:15 - 09:00)</td>
+                                <td>5.2B51</td>
+                                <td>Intro (verkürzt), HTML</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 24.09.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>CSS Basics</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 01.10.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>DIY Server</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 08.10.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>DIY Server Side Apps</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 15.10.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Grails Setup, GSP Views</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 22.10.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Web MVC</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 29.10.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Domain Model, DB</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 05.11.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Testing</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 12.11.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Security, Multi-User</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 19.11.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Start Bewertete Übung (Anwesenheitspflicht)</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 26.11.25 (08:15 - 11:00)</td>
+                                <td>5.3C06</td>
+                                <td>Übungsanlass</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 03.12.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Übungsanlass</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 10.12.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Übungsanlass</td>
+                            </tr>
+                            <tr>
+                                <td>Mi, 17.12.25 (08:15 - 11:00)</td>
+                                <td>5.2B51</td>
+                                <td>Abgabe</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="totaleffort">
+                    <h2> Total Effort</h2>
+                    <p> Classroom lectures add up to <code>14 * 3h = 42h</code>.</p>
+                    <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.</p>
+                    <p> This makes a total of <code>62h</code>.</p>
+                </article>
+                <article id="criteria">
+                    <h2> Passing criteria </h2>
+                    <ul>
+                        <li>You have to attend the exercise preparation event. (Anwesenheitspflicht)</li>
+                        <li>You have to do the exercise and deliver before the deadline.</li>
+                    </ul>
+                    <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade
+                            (EN)</abbr>. </p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <address>
+            Dierk König, 5.2B16,
+            <a href="mailto:dierk.koenig@fhnw.ch">dierk.koenig@fhnw.ch</a>
+        </address>
+    </footer>
+</body>
+
+</html>

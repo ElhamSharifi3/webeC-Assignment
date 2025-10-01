@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <title>My Programming Error Tracker</title>
     <style>
-        * {
-            margin: 0;
-            text-align: center;
-        }
 
         .container {
             max-width: 800px;
@@ -25,6 +21,8 @@
             font-family: Georgia, serif;
             font-size: 1.5rem;
             margin-bottom: 40px;
+            padding-left: 20px;
+            
         }
 
         html, body {
@@ -33,6 +31,7 @@
             background-color: #fff3fd;
             font-family: Georgia, serif;
             margin: 0;
+            text-align: left;
 
         }
 
@@ -45,9 +44,16 @@
             text-align: center;
         }
         h1, h2 {
+            color: #3a374f;
+            text-align: left;
+            font-family: Georgia, serif;
         }
 
-        h3 {}
+        h3 {
+            color: #3a374f;
+            text-align: left;
+            font-family: Georgia, serif;
+        }
 
         p {}
 
@@ -72,14 +78,14 @@
     <p> Note: Always check for null references before accessing object properties or methods.</p>
     <p><strong>Before Fix:</strong></p>
     <pre>
-public class Main {
+    public class Main {
     public static void main(String[] args) {
         String text = null;           
         System.out.println(text.length());
     }
 }</pre>
-    <p style="text-align:center;"><strong>After Fix:</strong></p>
-    <pre style="text-align:center;">
+    <p ><strong>After Fix:</strong></p>
+    <pre>
 public class Main {
     public static void main(String[] args) {
         String text = "Hello";        
