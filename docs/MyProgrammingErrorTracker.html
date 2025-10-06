@@ -32,7 +32,7 @@
     }
 
     footer {
-      background-color: #3a374f;
+      background-color: #3A374F;
       font-size: larger;
       font-family: papyrus, Fantasy;
       margin: 0;
@@ -43,22 +43,24 @@
 
     h1,
     h2 {
-      color: #3a374f;
+      color: #3A374F;
       text-align: left;
       font-family: Georgia, serif;
     }
 
     h3 {
-      color: #3a374f;
+      color: #3A374F;
       text-align: left;
       font-family: Georgia, serif;
     }
+
 
     pre {
       background-color: #f7ecfa;
       padding: 10px;
       border-radius: 8px;
       overflow-x: auto;
+      color: #3A374F;
     }
   </style>
 </head>
@@ -78,7 +80,7 @@
 
     <h2>Common Java Errors</h2>
 
-    <h3>NullPointerException</h3>
+    <h3>1. NullPointerException</h3>
     <p><strong>Cause:</strong> Trying to use an object that was never initialized.</p>
     <p><strong>Solution:</strong> Initialize the object before using it.</p>
     <p><strong>Note:</strong> Always check for null references before accessing object properties or methods.</p>
@@ -99,6 +101,31 @@ public class Main {
     public static void main(String[] args) {
         String text = "Hello";        
         System.out.println(text.length());
+    }
+}
+    </pre>
+
+<h3>2. ArrayIndexOutOfBoundsException</h3>
+    <p><strong>Cause:</strong> Trying to access an index outside the valid range of an array.</p>
+    <p><strong>Solution:</strong> Ensure the index is within the array’s valid range (0 to length - 1).</p>
+    <p><strong>Note:</strong> Check your loop conditions and array size before accessing elements.</p>
+
+    <p><strong>Before Fix:</strong></p>
+    <pre>
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers[3]); // Invalid index
+    }
+}
+    </pre>
+
+    <p><strong>After Fix:</strong></p>
+    <pre>
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers[2]); // Valid index
     }
 }
     </pre>
