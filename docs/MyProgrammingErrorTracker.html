@@ -2,89 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>My Programming Error Tracker</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>My Programming Error Tracker</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #fff3fd;
+      text-align: left;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1rem;
-            width: 100%;
-        }
+    header {
+      background-color: #9c7fa8;
+      color: #fff3fd;
+      text-align: left;
+      padding: 1rem 20px;
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
 
-        header {
-            background-color: #9c7fa8;
-            color: #fff3fd;
-            text-align: left;
-            padding: 1rem 0;
-            font-family: Georgia, serif;
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-            padding-left: 20px;
-            
-        }
 
-        html, body {
-            height: 100%;
-            display: flex-box;
-            background-color: #fff3fd;
-            font-family: Georgia, serif;
-            margin: 0;
-            text-align: left;
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 40px 20px;
+      width: 100%;
+    }
 
-        }
+    footer {
+      background-color: #3a374f;
+      font-size: larger;
+      font-family: papyrus, Fantasy;
+      margin: 0;
+      padding: 1.5rem 0;
+      text-align: center;
+      color: #fff3fd;
+    }
 
-        footer {
-            background-color: #3a374f;
-            font-size: larger;
-            font-family: papyrus, Fantasy;
-            margin: 0;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-        h1, h2 {
-            color: #3a374f;
-            text-align: left;
-            font-family: Georgia, serif;
-        }
+    h1,
+    h2 {
+      color: #3a374f;
+      text-align: left;
+      font-family: Georgia, serif;
+    }
 
-        h3 {
-            color: #3a374f;
-            text-align: left;
-            font-family: Georgia, serif;
-        }
+    h3 {
+      color: #3a374f;
+      text-align: left;
+      font-family: Georgia, serif;
+    }
 
-        p {}
-
-        pre {}
-    </style>
+    pre {
+      background-color: #f7ecfa;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <dfn title="Code Kitchen Uebung"></dfn> My Programming Error Tracker
-    </header>
+  <header>
+    <dfn title="Code Kitchen Übung"></dfn> My Programming Error Tracker
+  </header>
+
+  <main class="content">
     <h2>Introduction</h2>
-    <p>This web page helps me record, organize, and learn from the errors I encounter while programming in Java.<br>
-        By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid
-        repeating the same mistakes.</p>
+    <p>
+      This web page helps me record, organize, and learn from the errors I encounter while programming in Java.<br>
+      By keeping track of the error messages, their causes, and solutions, I can improve my coding skills and avoid
+      repeating the same mistakes.
+    </p>
 
     <h2>Common Java Errors</h2>
 
     <h3>NullPointerException</h3>
-    <p> Cause: Trying to use an object that was never initialized</p>
-    <p> Solution: Initialize the object before using it.</p>
-    <p> Note: Always check for null references before accessing object properties or methods.</p>
+    <p><strong>Cause:</strong> Trying to use an object that was never initialized.</p>
+    <p><strong>Solution:</strong> Initialize the object before using it.</p>
+    <p><strong>Note:</strong> Always check for null references before accessing object properties or methods.</p>
+
     <p><strong>Before Fix:</strong></p>
     <pre>
-    public class Main {
+public class Main {
     public static void main(String[] args) {
         String text = null;           
         System.out.println(text.length());
     }
-}</pre>
-    <p ><strong>After Fix:</strong></p>
+}
+    </pre>
+
+    <p><strong>After Fix:</strong></p>
     <pre>
 public class Main {
     public static void main(String[] args) {
@@ -92,13 +101,17 @@ public class Main {
         System.out.println(text.length());
     }
 }
-</pre>
-    <footer>
-        <address style="color: #fff3fd;">
-             @ Elham Sharifi,
-            <a style="color: #fff3fd;" href="mailto:elham.sharifi@students.fhnw.ch">elham.sharifi@students.fhnw.ch</a>
-        </address>
-    </footer>
+    </pre>
+  </main>
+
+  <footer>
+    <address>
+      @ Elham Sharifi,
+      <a style="color: #fff3fd;" href="mailto:elham.sharifi@students.fhnw.ch">
+        elham.sharifi@students.fhnw.ch
+      </a>
+    </address>
+  </footer>
 </body>
 
 </html>
