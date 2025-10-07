@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static html file</title>
+    <style>
+        .grid {
+            display:               grid;
+            grid-template-columns: repeat(2, max-content);
+            gap:                   .5em 2em;
+            padding:               2em;
+        }
+    </style>
+</head>
+<body>
+<h1>Static html file</h1>
+<div><a href="/myapp">plain</a></div>
+<div><a href="/myapp?a=1">one get param</a></div>
+<div><a href="/myapp?a=1&b=2">two get params</a></div>
+<div><a href="/myapp?a=1&a=2">one get param with two values</a></div>
+<div>
+    <form class="grid" method="POST" action="/myapp">
+        <label for="a">a</label>
+        <input id="a" name="a" value="1">
+        <label for="b">b</label>
+        <input id="b" name="b" value="2">
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
