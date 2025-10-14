@@ -7,6 +7,10 @@ import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
 
 public class Server {
 
@@ -14,6 +18,15 @@ public class Server {
 
     static class MyHandler implements HttpHandler {
         public void handle(HttpExchange exchange) throws IOException {
+
+            List<String> lines = new ArrayList<>(List.of(
+                "Es ist nie zu spät zum unpünktlich sein.",
+                "Ich komme noch früh genug zu spät.",
+                "Morgenstund ist aller Laster Anfang.",
+                "Den frühen Fänger wurmt der Vogel",
+                "Was Du heute kannst besorgen hat sicher auch noch Zeit bis morgen."
+            ));
+            Collections.shuffle(lines);
 
             String response =
                 """
@@ -25,6 +38,10 @@ public class Server {
                 </head>
                 <body>
                 <h1>Hello, Server World!</h1>
+                """
+                + lines.getFirst()
+                +
+                """
                 </body>
                 </html>
                 """;
