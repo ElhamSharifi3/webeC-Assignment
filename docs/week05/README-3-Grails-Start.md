@@ -1,0 +1,87 @@
+# WebEngineering Module, rooms
+
+## Goals
+
+### Abilities
+- Writing tests for page navigation
+- Writing tests for form submission
+- Implementing basic workflow: form - controller - view
+- Constructing html views with derived content
+- Validating appropriately
+
+### Knowledge
+- Understanding the purpose and benefit of functional tests on the web
+- Understanding the purpose and benefit of unit tests
+- Understanding the web rooms cycle, request-response paradigm
+- Using models for request data binding and response view creation
+- Where and how to validate
+
+## Assignment 1
+
+Make sure that you have a Java JDK 17 installed and `JAVA_HOME` 
+set appropriately. (Tested with 17.0.6-tem) 
+Check by running
+
+    java -version
+
+Run the tests in the following way:
+
+    ./gradlew integrationTest -Dgeb.env=htmlUnit
+
+If all goes well and your locally installed browser matches
+the respective driver, you can follow along the tests visually
+by starting them in one of the following ways:
+
+    ./gradlew integrationTest -Dgeb.env=chrome
+    ./gradlew integrationTest -Dgeb.env=firefox
+    ./gradlew integrationTest -Dgeb.env=safari
+
+_this will take a while to download the first time_ and some tests might fail. 
+That is ok for the moment.
+        
+Run the application
+
+    ./gradlew bootRun
+
+Browse to http://localhost:8080/static/Home.html .
+
+## Assignment 2
+
+Have a look at /src/integration-test/groovy/rooms/HomeSecondSpec.groovy .
+
+Try to write a test, that goes to http://www.fhnw.ch/de/
+and clicks on a link with text "Standorte und Kontakt" (or some other link that is available).
+Validate the page title.
+
+## Assignment 3
+
+Have a look at 
+- http://localhost:8080/static/GradeCalculator.html
+- /src/integration-test/groovy/rooms/CalculatorSpec.groovy (note the commented line 28)
+- /src/main/resources/public/GradeCalculator.html 
+- /grails-app/controllers/rooms/CalculatorController.groovy
+- /views/calculator/CalculatorOutput.gsp (note the output placeholder)
+- /src/test/groovy/rooms/CalculatorControllerSpec.groovy
+
+Uncomment line 28 in the integration test and run the tests again.
+
+Open `/build/reports/tests/index.html` (or look at the internal test runner) 
+to see which test failed and why.
+
+Use `${ result }` in CalculatorOutput.gsp to put that calculated result in the right place.
+
+## Assignment 4
+
+In the GradeCalculator:
+what happens when _tec_ or _own_ do not represent numbers?
+
+Extend the integration test to cover the invalid input scenario.
+
+## Assignment 5
+
+What happens when _tec_ or _own_ do fall outside their allowed value range?
+
+Write down how you would address this issue.
+Unit test or integration test?
+Which code needs change: test, controller, view?
+

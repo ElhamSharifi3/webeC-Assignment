@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>
+        Grade Calculator
+    </title>
+    <style>
+        html {
+            font-family: system-ui;
+        }
+        form {
+            padding:        1em;
+            box-shadow:     .2em .2em .5em lightgray;
+            max-width:      60ch;
+            margin-inline:  auto;
+            margin-top:     2em;
+            display:        grid;
+            grid-template-columns: max-content max-content;
+            gap:            .5em 1em;
+        }
+    </style>
+</head>
+<body>
+<form action="/calculator/calc" method="get">
+    <label for="tec">technical value (1.0 - 6.0)</label>
+    <input id="tec" name="tec" type="number" step="0.1" min="1" max="6" value="4.0">
+    <label for="own">own contribution %</label>
+    <input id="own" name="own" type="number" step="1" min="0" max="100" value="80">
+    <input type="submit">
+</form>
+</body>
+</html>
