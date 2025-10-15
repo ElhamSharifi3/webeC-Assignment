@@ -24,7 +24,7 @@ class CalculatorSpec extends GebSpec {
             $("input", type: "submit").click()
 
         then: "Result Page is displayed"
-            title == "Grade Calculator"
+            title == "Calculated Grade"
 //            $("output").text() == "4.0"
 
 
