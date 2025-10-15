@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # webec-hs25
 
 ## Preparation
@@ -31,3 +32,6 @@
 - [https://www.gebish.org/manual/current/](https://www.gebish.org/manual/current/)
 
 
+=======
+# webeC-Assignment
+>>>>>>> ab9b499bd8f1700162e3735c25603b04fa6d57fd

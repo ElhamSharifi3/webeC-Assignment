@@ -26,7 +26,7 @@ class HomeSecondSpec extends GebSpec {
         when: "click on link to second"
             $("a", text: "second").click()
         then: "Second page is displayed"
-            title == "Second"
+            title == "Homepage"
 
         when: "click on back link"
             $("a", text: "home").click()
